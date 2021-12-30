@@ -1,0 +1,124 @@
+/* top-menu-bar  */
+
+/* UTILITIES */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    width: auto;
+    height: auto;
+    flex: left;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.logo_home {
+    max-width: 230px;
+    max-height: 95px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    padding: 0 20px 0 0;
+}
+
+.menu #active {
+    opacity: 1;
+}
+
+.menu li:hover {
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+
+.menu li {
+    padding: 5px 14px;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    margin: 0 20px 30px 0;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        background-color: #18191b;
+        z-index: 99;
+        border-bottom: 0.15rem solid #fff;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        opacity: 1;
+        transition: 0.3s ease;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}
+
+/* end top menu bar */

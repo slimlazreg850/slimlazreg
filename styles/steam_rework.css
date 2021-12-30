@@ -1,0 +1,304 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #18191b;
+    scroll-behavior: smooth !important;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/* Scrollbar Firefox, Blink */
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #E4FF3D #18191b;
+}
+
+
+/* Scrollbar Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #18191b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #E4FF3D;
+    border-radius: 10px;
+    border: 2px solid #18191b;
+}
+
+#wrapper-back {
+    position: fixed;
+    left: 1.5%;
+    margin-top: 1.5%;
+}
+
+#wrapper-back-mediaq {
+    display: none;
+}
+
+#wrapper-back a button {
+    width: 145px;
+    height: 56px;
+    background-color: #E4FF3D;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#wrapper-back a button img {
+    padding-right: 10px;
+    
+}
+
+#wrapper-back a button span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-right: 2%;
+}
+
+
+/* h2 section */
+
+#container-h2 {
+    position: relative;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+#h2-section {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+}
+
+/* end h2 section */
+
+#top-Main {
+    width: 65%;
+    margin: 2% auto 0 auto;
+    padding: 0 5px;
+}
+
+
+.h2-section-in {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+}
+
+#wrapper-allContent {
+    width: 65%;
+    height: 70%;
+    margin: 0 auto 0 auto;
+    display: flex;
+}
+
+#wrapper-img {
+    width: 18%;
+    height: 86.5%;
+    margin: 0 5px 0 0;
+    overflow-y: auto;
+    scrollbar-color: #214646 #18191b;
+}
+
+#wrapper-img:hover {
+    scrollbar-color: #b9fdff #18191b;
+}
+
+.thumbnail-imgs {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    margin-bottom: 3px;
+    opacity: 0.4;
+}
+
+.thumbnail-imgs:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1;
+    border: 3px solid #E4FF3D;
+}
+
+#wrapper-FullScrenImgDesc {
+    width: 100%;
+    height: 100%;
+    margin: 0 5px;
+}
+
+#wrapper-FullScrenImg {
+    width: 100%;
+}
+
+#wrapper-ScreenImgDesc {
+    width: 100%;
+    height: 11%;
+    margin-top: 1.5%;
+}
+
+#wrapper-Desc {
+    width: 20%;
+    height: 85.5%;
+}
+
+.fullScreen-img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+#empty {
+    width: 100%;
+    height: 40%;
+    margin: 0 0 3px 0;
+}
+
+#mainTitle {
+    margin: auto;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#mainSubtitle {
+    margin: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 165%;
+}
+
+#bottom-infos {
+    width: 100%;
+    height: 15%;
+    margin: 0 0 3px 0;
+    display: flex;
+}
+
+#btm-left {
+    height: 100%;
+    width: 25%;
+}
+
+#btm-left p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#btm-right {
+    height: 100%;
+    width: 75%;
+}
+
+#btm-right p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #57B6DC;
+}
+
+@media (max-width: 768px) {
+
+    #wrapper-back {
+        display: none;
+    }
+    
+    #wrapper-back-mediaq {
+        display: block;
+        position: fixed;
+        left: 1.5%;
+        margin-top: 1.5%;
+    }
+    
+    #wrapper-back-mediaq a button {
+        width: 25px;
+        height: 30px;
+        background-color: #E4FF3D;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #wrapper-back-mediaq a button img {
+        vertical-align: middle;
+    }
+
+    #h2-section {
+        font-size: 3.2vw;
+    }
+
+    .h2-section-in {
+        font-size: 2.3vw;
+        line-height: 3vw;
+    }
+
+    #wrapper-ScreenImgDesc {
+        line-height: 3vw;
+    }
+
+    #title {
+        font-size: 3vw;
+    }
+
+    #subtitle {
+        font-size: 2.3vw;
+    }
+}

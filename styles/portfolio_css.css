@@ -1,0 +1,360 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #18191b;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/* Scrollbar Firefox, Blink */
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #E4FF3D #18191b;
+}
+
+
+/* Scrollbar Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #18191b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #E4FF3D;
+    border-radius: 10px;
+    border: 2px solid #18191b;
+}
+
+/* h2 section */
+
+#container-h2 {
+    position: relative;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+
+#h2-section {
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 33px;
+    align-items: center;
+    position: relative;
+    color: #FFFFFF;
+}
+
+/* selector class */
+
+#selector-class {
+    width: 100%;
+    align-content: center;
+    display: flex;
+    margin-top: 1%;
+    padding-bottom: 0.5%;
+}
+
+.ul-selector {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    list-style-type: none;
+}
+
+
+.ul-selector a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ul-selector li {
+    flex: 1 0 auto;
+    width: 150px;
+    height: 80px;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    display: table;
+    margin: 0px auto 0px auto;
+    line-height: 80px;
+    opacity: 0.6;
+}
+
+.ul-selector li:hover, .active {
+    opacity: 1;
+}
+
+#all {
+    opacity: 1;
+}
+
+
+
+/* grid images  */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 1 4px;
+    margin: 1% auto;
+    width: 60%;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 33%;
+    flex: 33%;
+    max-width: auto;
+    padding: 0 10px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.column button {
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 4%;
+    width: 100%;
+    height: 450px;
+    border: none;
+    outline: none;
+    margin-bottom: 3%;
+    vertical-align: middle;
+    transition: 0.2s;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.column button:hover {
+    opacity: 1;
+}
+
+.column button h2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column>img {
+    width: 100%;
+}
+
+.column button h2 span {
+    position: relative;
+    text-align: right;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+    width: 30%;
+    right: 5%;
+    top: 68%;
+    color: #070707;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.8));
+}
+
+.column button h2 span.uiux {
+    background-color: #E4FF3D;
+    width: fit-content;
+}
+
+.column button h2 span.projet-3D {
+    background-color: green;
+    width: fit-content;
+}
+
+.column button h2 span.jv {
+    background-color: blue;
+    width: fit-content;
+}
+
+#riven_3d {
+    /* height: 490px; */
+    background-image: url(../assets/portfolio/3d/riven_3d/0ac3b1130733011.61868f37f1009.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#ui-steam {
+    /* height: 350px; */
+    background-image: url(../assets/portfolio/ui_ux/steam_rework/0a5e24133265377.61b9d15d60f3c.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#ux-tregre {
+    /* height: 600px; */
+    background-image: url(../assets/portfolio/ui_ux/tregre/j4156fe68420fd.png);
+    background-position: 80% 25%;
+    background-size: cover;
+}
+
+#mhk {
+    /* height: 250px; */
+    background-image: url(../assets/portfolio/ui_ux/MHK/3e894b113976643.6032bf0ce8988.png);
+    background-position: 100% 10%;
+    background-size: cover;
+}
+
+#pr_skoda {
+    /* height: 350px; */
+    background-image: url(../assets/portfolio/ui_ux/skoda/875894113976625.6032bef978f8e.png);
+    background-position: 100% 90%;
+    background-size: cover;
+}
+
+#omote-gate {
+    /* height: 450px; */
+    background-image: url(../assets/portfolio/3d/omate_gate/cb7406112820273.601bc13657910.png);
+    background-position: 55% 90%;
+    background-size: cover;
+}
+
+#rammstein {
+    /* height: 350px; */
+    background-image: url(../assets/portfolio/3d/rammstein_scene/1f539f110755033.5ff4d974e9dce.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#dont-fall {
+    /* height: 390px; */
+    background-image: url(../assets/portfolio/video_game/dont_fall/e29a81110663695.5ff3553ae5401.png);
+    background-position: 55% 90%;
+    background-size: cover;
+}
+
+#HTC-halloween {
+    /* height: 420px; */
+    background-image: url(../assets/portfolio/video_game/hit_the_cloud_halloween/434fc489781829.5e008b26723e7.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#the-desk {
+    /* height: 390px; */
+    background-image: url(../assets/portfolio/3d/the_desk/77a03189123557.5deac9a8dc9de.png);
+    background-position: 65% 20%;
+    background-size: cover;
+}
+
+#HTC-snow {
+    /* height: 470px; */
+    background-image: url(../assets/portfolio/video_game/hit_the_cloud_snow/feeff258971061.5a10374639a8f.png);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+#frozen-bow {
+    /* height: 350px; */
+    background-image: url(../assets/portfolio/3d/frozen_bow/1dc6a158713571.5a0634592d731.png);
+    background-position: 55% 50%;
+    background-size:cover;
+}
+
+
+@media screen and (min-device-width: 1551px) and (max-device-width: 1550px) {
+
+    .column {
+        flex: 50%;
+    }
+
+    .column button {
+        max-width: 100%;
+        max-height: 20vw;
+    }
+    .column button h2 span {
+        width: 50%;
+        top: 55%;
+        font-size: 1.5vw;
+        padding: 0 1vw;
+    }
+}
+
+@media screen and (min-device-width: 769px) and (max-device-width: 1550px) {
+
+    .column {
+        flex: 50%;
+    }
+
+    .column button {
+        max-width: 100%;
+        max-height: 20vw;
+    }
+    .column button h2 span {
+        width: 50%;
+        top: 55%;
+        font-size: 1.5vw;
+        padding: 0 1vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #h2-section {
+        font-size: 3.2vw;
+    }
+
+    #selector-class {
+        width: 100%;
+    }
+
+    .ul-selector li {
+        font-size: 3.5vw;
+        width: 21vw;
+    }
+
+    .row {
+        width: 90%;
+    }
+
+    .column {
+        flex: 50%;
+    }
+
+    .column button {
+        max-width: 100%;
+        max-height: 20vw;
+        object-fit: contain;
+    }
+
+    .column button h2 span {
+        font-size: 2.5vw;
+    }
+
+    .column button h2 {
+        height: 0;
+    }
+
+}

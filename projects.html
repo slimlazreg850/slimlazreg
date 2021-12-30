@@ -1,0 +1,566 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projets Professionnels</title>
+    <meta name="description" content="Slim Lazreg, Portfolio, Profile">
+    <meta name="author" content="Slim Lazreg">
+
+    <meta property="og:title" content="Slim Lazreg">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"> -->
+    <!-- <meta property="og:description" content="A simple HTML5 Template for new projects."> -->
+    <meta property="og:image" content="assets/images/logo_home.png">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- links -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Gothic+A1:wght@200;600&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- <script  src="node_modules/swup/dist/swup.min.js"></script>
+    <script  src="scripts/script_swup.js"></script>
+    <script  src="node_modules/@swup/head-plugin/dist/SwupHeadPlugin.js"></script> -->
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="scripts/js-scripts.js"></script>
+
+    <link rel="stylesheet" href="styles/common_parts/swup_style.css">
+    <link rel="stylesheet" href="styles/common_parts/top-menu-bar.css">
+    <link rel="stylesheet" href="styles/common_parts/btn-to-top.css">
+    <link rel="stylesheet" href="styles/projects_css.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"><a href="home.html"><img class="logo_home" src="assets/images/logo_home.png"
+                    alt="logo_home"></a>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="/about.html">_about</a></li>
+                <li id="active"><a href="/projects.html">_projet</a></li>
+                <li><a href="/portfolio.html">_portfolio</a></li>
+                <li><a href="/contact.html">_contact</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
+    <!-- back-to-top btn sticky -->
+    <div id="scroll-here"></div>
+    <a id="back-to-top" href="#scroll-here">
+        <img src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Up%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M20 40l11.994-14L44 40' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+            alt="Angle Up" />
+    </a>
+
+    <main id="swup" class="transition-fade">
+
+        <div id="container-h2">
+            <h2 id="h2-section">Entered in the section : _projects</h2>
+        </div>
+
+        <div id="accordions-container">
+            <div id="content">
+                <!-- UIUXDesigner-snt-luxembourg -->
+                <button class="accordion" id="snt_uiux">
+                    <h2><span>UI/UX Designer - SnT - Luxembourg</span></h2>
+                </button>
+                <div class="panel">
+                    <p class="inner-div-accordion"><strong>Structure :</strong> Security And Trust (SnT) - SerVal -
+                        University
+                        of Luxembourg</p>
+                    <p class="inner-div-accordion"><strong>Lieu :</strong> Luxembourg, Luxembourg</p>
+                    <p class="inner-div-accordion"><strong>Dates :</strong> Juin 2021 - Août 2021</p>
+                    <p class="inner-div-accordion"><strong>Contexte :</strong> Lorem Ipsum</p>
+                    <p class="inner-div-accordion dashed">Objectifs :</p>
+                    <ul class="dashed">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ul>
+
+                    <p class="inner-div-accordion"><strong>Missions :</strong> Juin 2021 - Août 2021</p>
+                    <p class="inner-div-accordion"><strong>Lien utile :</strong><a class="nolinks-accordion"> Étant
+                            donné
+                            que ce projet est au stade de R&D, aucun lien officiel n'est disponible. Les captures
+                            d'écran
+                            ci-dessous montre l'avancement de ce projet ambitieux et nouveau dans cet industrie.</a></p>
+                    <p class="inner-div-accordion"><strong>Catpures d'écran utiles :</strong> </p>
+                    <!-- Boxed img -->
+                    <div class="row">
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(1)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/splashscreen_snt.png" alt="test">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(2)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/opening_snt.png" alt="Ouverture des projets">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(3)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/GlobalViewpml.png" alt="Vue globale PML">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(4)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/GlobalViewprop.png" alt="Vue globale PROP">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(5)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/GlobalViewtvl.png" alt="Vue globale TVL">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(6)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/Verifier_High_nonStart_Simulate.png"
+                                alt="Vérifieur !Start">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(7)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/Verifier_High_Start_Simulate.png" alt="Vérifieur Start">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-SNT');currentSlide(8)" class="hover-shadow demo-sc cursor"
+                                src="assets/images/snt_project/Simulateur_4.png" alt="Simulateur">
+                        </div>
+                    </div>
+
+
+                    <div id="myModal-SNT" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal-SNT')">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="myModal-SNT">
+                                <div class="numbertext">1 / 8</div>
+                                <img src="assets/images/snt_project/splashscreen_snt.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">2 / 8</div>
+                                <img src="assets/images/snt_project/opening_snt.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">3 / 8</div>
+                                <img src="assets/images/snt_project/GlobalViewpml.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">4 / 8</div>
+                                <img src="assets/images/snt_project/GlobalViewprop.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">5 / 8</div>
+                                <img src="assets/images/snt_project/GlobalViewtvl.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">6 / 8</div>
+                                <img src="assets/images/snt_project/Verifier_High_nonStart_Simulate.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">7 / 8</div>
+                                <img src="assets/images/snt_project/Verifier_High_Start_Simulate.png">
+                            </div>
+                            <div class="myModal-SNT">
+                                <div class="numbertext">8 / 8</div>
+                                <img src="assets/images/snt_project/Simulateur_4.png">
+                            </div>
+
+                            <!-- next previous button -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="captionSNT"></p>
+                                <p id="subtexTitleSNT"></p>
+                            </div>
+
+                            <!-- Vignette zoom -->
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/splashscreen_snt.png"
+                                    onclick="currentSlide(1)" alt="Splashcreen | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/opening_snt.png"
+                                    onclick="currentSlide(2)" alt="Ouverture des projets | testo">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/GlobalViewpml.png"
+                                    onclick="currentSlide(3)" alt="Vue globale PML | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/GlobalViewprop.png"
+                                    onclick="currentSlide(4)" alt="Vue globale PROP | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/GlobalViewtvl.png"
+                                    onclick="currentSlide(5)" alt="Vue globale TVL | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor"
+                                    src="assets/images/snt_project/Verifier_High_nonStart_Simulate.png"
+                                    onclick="currentSlide(6)" alt="Vérifieur !Start | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor"
+                                    src="assets/images/snt_project/Verifier_High_Start_Simulate.png"
+                                    onclick="currentSlide(7)" alt="Vérifieur Start |test ">
+                            </div>
+                            <div class="column">
+                                <img class="demoSNT cursor" src="assets/images/snt_project/Simulateur_4.png"
+                                    onclick="currentSlide(8)" alt="Simulateur | test ">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Laravel-Del-Kalam-Toulon-France -->
+                <button class="accordion" id="laravel-kalam">
+                    <h2><span>Laravel Dev - Kalam Conseil - Toulon, France</span></h2>
+                </button>
+
+                <div class="panel">
+                    <p class="inner-div-accordion"><strong>Structure</strong> Kalam Conseil - Agence de communication -
+                        Toulon, France</p>
+                    <p class="inner-div-accordion"><strong>Lieu</strong> Toulon, France</p>
+                    <p class="inner-div-accordion"><strong>Dates :</strong> Juin 2019 - Août 2019</p>
+                    <p class="inner-div-accordion"><strong>Contexte :</strong> Lorem Ipsum</p>
+                    <p class="inner-div-accordion dashed">Objectifs :</p>
+                    <ul class="dashed">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ul>
+
+                    <p class="inner-div-accordion"><strong>Missions :</strong> Juin 2021 - Août 2021</p>
+                    <p class="inner-div-accordion"><strong>Lien utile :</strong><a class="links-accordion"
+                            href="https://www.brimmobilier-neuf.fr/"> https://www.brimmobilier-neuf.fr/</a></p>
+                    <p class="inner-div-accordion"><strong>Catpures d'écran utiles :</strong> </p>
+                    <!-- Boxed img -->
+                    <div class="row">
+                        <div class="column">
+                            <img onclick="openModal('myModal-Laravel');currentSlide(1)"
+                                class="hover-shadow demo-sc cursor" src="assets/images/kalam-br/br_immo_main_page.png"
+                                alt="test">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Laravel');currentSlide(2)"
+                                class="hover-shadow demo-sc cursor" src="assets/images/kalam-br/br_immo_listing.png"
+                                alt="Ouverture des projets">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Laravel');currentSlide(3)"
+                                class="hover-shadow demo-sc cursor" src="assets/images/kalam-br/br_immo_exp.png"
+                                alt="Vue globale PML">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Laravel');currentSlide(4)"
+                                class="hover-shadow demo-sc cursor" src="assets/images/kalam-br/br_immo_dispo.png"
+                                alt="Vue globale PML">
+                        </div>
+                    </div>
+
+
+                    <div id="myModal-Laravel" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal-Laravel')">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="myModal-Laravel">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="assets/images/kalam-br/br_immo_main_page.png">
+                            </div>
+                            <div class="myModal-Laravel">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="assets/images/kalam-br/br_immo_listing.png">
+                            </div>
+                            <div class="myModal-Laravel">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="assets/images/kalam-br/br_immo_exp.png">
+                            </div>
+                            <div class="myModal-Laravel">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="assets/images/kalam-br/br_immo_dispo.png">
+                            </div>
+
+                            <!-- next previous button -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="captionLaravel"></p>
+                                <p id="subtexTitleLaravel"></p>
+                            </div>
+
+                            <!-- Vignette zoom -->
+                            <div class="column">
+                                <img class="demoLaravel cursor" src="assets/images/kalam-br/br_immo_main_page.png"
+                                    onclick="currentSlide(1)" alt="Splashcreen | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoLaravel cursor" src="assets/images/kalam-br/br_immo_listing.png"
+                                    onclick="currentSlide(2)" alt="Ouverture des projets | testo">
+                            </div>
+                            <div class="column">
+                                <img class="demoLaravel cursor" src="assets/images/kalam-br/br_immo_exp.png"
+                                    onclick="currentSlide(3)" alt="Vue globale PML | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoLaravel cursor" src="assets/images/kalam-br/br_immo_dispo.png"
+                                    onclick="currentSlide(4)" alt="Vue globale PML | test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comptapic-Kalam-Toulon-France -->
+                <button class="accordion" id="comptapic-kalam">
+                    <h2><span>Ionic Dev (Mobile App) - Kalam Conseil - Toulon, France</span></h2>
+                </button>
+
+                <div class="panel">
+                    <p class="inner-div-accordion"><strong>Structure</strong> Kalam Conseil - Agence de communication -
+                        Toulon, France</p>
+                    <p class="inner-div-accordion"><strong>Lieu</strong> Toulon, France</p>
+                    <p class="inner-div-accordion"><strong>Dates :</strong> Avril 2019 - Juin 2019</p>
+                    <p class="inner-div-accordion"><strong>Contexte :</strong> Lorem Ipsum</p>
+                    <p class="inner-div-accordion dashed">Objectifs :</p>
+                    <ul class="dashed">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ul>
+
+                    <p class="inner-div-accordion"><strong>Missions :</strong> Juin 2021 - Août 2021</p>
+                    <p class="inner-div-accordion"><strong>Lien utile :</strong><a class="links-accordion"
+                            href="https://www.comptapic.com/"> https://www.comptapic.com/</a></p>
+                    <p class="inner-div-accordion"><strong>Note utile :</strong> L'application sur les différents stores
+                        a
+                        été retiré depuis mon départ, aucune capture d'écran de l'application n'a pas être récupéré.</p>
+                    <p class="inner-div-accordion"><strong>Catpures d'écran utiles :</strong> </p>
+                    <!-- Boxed img -->
+                    <div class="row">
+                        <div class="column">
+                            <img onclick="openModal('myModal-Comptapic');currentSlide(1)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/comptapic-project/comptapic_main.png" alt="test">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Comptapic');currentSlide(2)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/comptapic-project/comptapic_home.png" alt="Ouverture des projets">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Comptapic');currentSlide(3)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/comptapic-project/comptapic_explains.png" alt="Vue globale PML">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Comptapic');currentSlide(4)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/comptapic-project/comptapic_tarifs.png" alt="Vue globale PML">
+                        </div>
+                    </div>
+
+
+                    <div id="myModal-Comptapic" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal-Comptapic')">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="myModal-Comptapic">
+                                <div class="numbertext">1 / 4</div>
+                                <img src="assets/images/comptapic-project/comptapic_main.png">
+                            </div>
+                            <div class="myModal-Comptapic">
+                                <div class="numbertext">2 / 4</div>
+                                <img src="assets/images/comptapic-project/comptapic_home.png">
+                            </div>
+                            <div class="myModal-Comptapic">
+                                <div class="numbertext">3 / 4</div>
+                                <img src="assets/images/comptapic-project/comptapic_explains.png">
+                            </div>
+                            <div class="myModal-Comptapic">
+                                <div class="numbertext">4 / 4</div>
+                                <img src="assets/images/comptapic-project/comptapic_tarifs.png">
+                            </div>
+
+                            <!-- next previous button -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="captionComptapic"></p>
+                                <p id="subtexTitleComptapic"></p>
+                            </div>
+
+                            <!-- Vignette zoom -->
+                            <div class="column">
+                                <img class="demoComptapic cursor"
+                                    src="assets/images/comptapic-project/comptapic_main.png" onclick="currentSlide(1)"
+                                    alt="Splashcreen | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoComptapic cursor"
+                                    src="assets/images/comptapic-project/comptapic_home.png" onclick="currentSlide(2)"
+                                    alt="Ouverture des projets | testo">
+                            </div>
+                            <div class="column">
+                                <img class="demoComptapic cursor"
+                                    src="assets/images/comptapic-project/comptapic_explains.png"
+                                    onclick="currentSlide(3)" alt="Vue globale PML | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoComptapic cursor"
+                                    src="assets/images/comptapic-project/comptapic_tarifs.png" onclick="currentSlide(4)"
+                                    alt="Vue globale PML | test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wordpress-interactive4D-Nice-France -->
+                <button class="accordion" id="strathenai4">
+                    <h2><span>WordPress Dev - Interactive 4D - Nice, France</span></h2>
+                </button>
+
+                <div class="panel">
+                    <p class="inner-div-accordion"><strong>Structure</strong> Interactive 4D - Studio de Serious Games -
+                        Nice, France</p>
+                    <p class="inner-div-accordion"><strong>Lieu</strong> Nice, France</p>
+                    <p class="inner-div-accordion"><strong>Dates :</strong> Mai 2018 - Août 2018</p>
+                    <p class="inner-div-accordion"><strong>Contexte :</strong> Lorem Ipsum</p>
+                    <p class="inner-div-accordion dashed">Objectifs :</p>
+                    <ul class="dashed">
+                        <li>First</li>
+                        <li>Second</li>
+                        <li>Third</li>
+                    </ul>
+
+                    <p class="inner-div-accordion"><strong>Missions :</strong> Juin 2021 - Août 2021</p>
+                    <p class="inner-div-accordion"><strong>Lien utile :</strong><a class="links-accordion"
+                            href="https://strathena.fr/"> https://strathena.fr/</a></p>
+                    <p class="inner-div-accordion"><strong>Catpures d'écran utiles :</strong> </p>
+                    <!-- Boxed img -->
+                    <div class="row">
+                        <div class="column">
+                            <img onclick="openModal('myModal-Strathena');currentSlide(1)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/strathena_project/strathena_home.png" alt="test">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Strathena');currentSlide(2)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/strathena_project/strathena_presentation-plateforme.png"
+                                alt="Ouverture des projets">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Strathena');currentSlide(3)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/strathena_project/strathena_regle.png" alt="Vue globale PML">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Strathena');currentSlide(4)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/strathena_project/strathena_actu.png" alt="Vue globale PML">
+                        </div>
+                        <div class="column">
+                            <img onclick="openModal('myModal-Strathena');currentSlide(5)"
+                                class="hover-shadow demo-sc cursor"
+                                src="assets/images/strathena_project/strathena_chapter1.png" alt="Vue globale PML">
+                        </div>
+                    </div>
+
+
+                    <div id="myModal-Strathena" class="modal">
+                        <span class="close cursor" onclick="closeModal('myModal-Strathena')">&times;</span>
+                        <div class="modal-content">
+
+                            <div class="myModal-Strathena">
+                                <div class="numbertext">1 / 5</div>
+                                <img src="assets/images/strathena_project/strathena_home.png">
+                            </div>
+                            <div class="myModal-Strathena">
+                                <div class="numbertext">2 / 5</div>
+                                <img src="assets/images/strathena_project/strathena_presentation-plateforme.png">
+                            </div>
+                            <div class="myModal-Strathena">
+                                <div class="numbertext">3 / 5</div>
+                                <img src="assets/images/strathena_project/strathena_regle.png">
+                            </div>
+                            <div class="myModal-Strathena">
+                                <div class="numbertext">4 / 5</div>
+                                <img src="assets/images/strathena_project/strathena_actu.png">
+                            </div>
+                            <div class="myModal-Strathena">
+                                <div class="numbertext">5 / 5</div>
+                                <img src="assets/images/strathena_project/strathena_chapter1.png">
+                            </div>
+
+                            <!-- next previous button -->
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                            <div class="caption-container">
+                                <p id="captionStrathena"></p>
+                                <p id="subtexTitleStrathena"></p>
+                            </div>
+
+                            <!-- Vignette zoom -->
+                            <div class="column">
+                                <img class="demoStrathena cursor"
+                                    src="assets/images/strathena_project/strathena_home.png" onclick="currentSlide(1)"
+                                    alt="Splashcreen | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoStrathena cursor"
+                                    src="assets/images/strathena_project/strathena_presentation-plateforme.png"
+                                    onclick="currentSlide(2)" alt="Ouverture des projets | testo">
+                            </div>
+                            <div class="column">
+                                <img class="demoStrathena cursor"
+                                    src="assets/images/strathena_project/strathena_regle.png" onclick="currentSlide(3)"
+                                    alt="Vue globale PML | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoStrathena cursor"
+                                    src="assets/images/strathena_project/strathena_actu.png" onclick="currentSlide(4)"
+                                    alt="Vue globale PML | test">
+                            </div>
+                            <div class="column">
+                                <img class="demoStrathena cursor"
+                                    src="assets/images/strathena_project/strathena_chapter1.png"
+                                    onclick="currentSlide(5)" alt="Vue globale PML | test">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- pre-end of main container -->
+            </div>
+        </div>
+
+    </main>
+
+    <script type="text/javascript" src="scripts/back-to-top.js"></script>
+    <script type="text/javascript" src="scripts/accordion.js"></script>
+
+
+</body>
+
+</html>
