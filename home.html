@@ -32,34 +32,28 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 
-  <script defer src="node_modules/swup/dist/swup.min.js"></script>
-  <script defer src="scripts/script_swup.js"></script>
+  <script defer src="node_modules/swup/dist/swup.js"></script>
   <script defer src="node_modules/@swup/head-plugin/dist/SwupHeadPlugin.js"></script>
+  <script defer src="scripts/script_swup.js"></script>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="styles/common_parts/swup_style.css">
-  <link rel="stylesheet" href="styles/common_parts/top-menu-bar.css">
-  <link rel="stylesheet" href="styles/common_parts/btn-to-top.css">
   <link rel="stylesheet" href="styles/home_css.css">
+
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-32x32.png">
 
 </head>
 
-<body>
+<body class="stop-scrolling">
 
   <div class="intro">
     <h1 class="logo-header">
-      <span class="logo">slimlazreg</span><span class="logo">.fr</span>
+      <span class="logo">slimlazreg</span><span class="logo"><span style="color: #FE1C33;">.</span>fr</span>
     </h1>
   </div>
 
-  <!-- BACK-TO-TOP STICKY BTN -->
-  <!-- <div id="scroll-here"></div>
-  <a id="back-to-top" href="#scroll-here">
-    <img
-      src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Up%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M20 40l11.994-14L44 40' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
-      alt="Angle Up" />
-  </a> -->
 
   <div id="right-dots-nav">
     <a id="a_anchor1" onclick="scrollSmoothTo('anchor-1')">
@@ -70,12 +64,11 @@
       <div id="btn-off" class="off"></div>
     </a>
   </div>
-
   <div id="footer">
     <p>version 0.0.1</p>
   </div>
 
-  <div class="span-scroll" style="background-color: #fff;">
+  <div class="span-scroll">
     <span id="anchor-1"></span>
     <!-- <nav class="navbar" style="background-color: #18191b;">
       <div class="logo"><a href="home.html"><img class="logo_home" src="assets/images/logo_home.png"
@@ -102,8 +95,8 @@
         </div>
       </div>
       <div id="container">
-        <img id="logo-main-page" src="assets/images/logo_home.png" alt="logo_LAZ">
-        <h2>Slim Lazreg</h2>
+        <img id="logo-main-page" src="assets/images/new_logo_main.png" alt="logo_LAZ">
+        <h2>Slim <span style="color: #FE1C33;">Laz</span>reg</h2>
         <p class="typing">En recherche d'emploi en tant qu'UI Designer/WebDesign.</p>
         <div class="scroll-downs">
           <div class="mousey">
@@ -121,18 +114,20 @@
     <span id="anchor-2"></span>
     <span id="wrapper">
       <div id="first-block">
-        <div id="left-wrapper">
-          <img id="main_compo_loop" src="assets/videos/zzzzz.gif" alt="main_compo" />
+        <div class="left-wrapper">
+          <video width="100%" height="100%" autoplay muted loop>
+            <source src="assets/videos/Composition_Biographique.mp4" type="video/mp4">
+            Votre navigateur/appareil ne supporte ce type de format vidéo.
+          </video>
         </div>
-        <div id="right-wrapper">
+        <div class="right-wrapper">
           <h2>Bienvenue !</h2>
           <p>
             Vous êtes arrivé à destination de mon site-portfolio-autobiographique où j'affiche toutes mes créations
             ainsi
             que tous les projets auquel j'ai participé mais aussi une description de moi-même.
-            <!-- Qu'ils soit professionnelles ou personnels, j'espère que mes projets vous plairons et vous donnerons des futurs idées de projets ou d'amélioration. -->
           </p>
-          <a href="/about.html">
+          <a href="about.html">
             <span></span>
             <span></span>
             <span></span>
@@ -142,28 +137,40 @@
         </div>
       </div>
 
-      <div id="first-block">
-        <div id="left-wrapper">
-          <img id="main_compo_loop" src="assets/videos/zzzzz.gif" alt="main_compo" />
-        </div>
-        <div id="right-wrapper">
-          <h2>Projets & Portfolio</h2>
+      <div id="second-block">
+        <div class="right-wrapper second-div">
+          <h2>Projets </h2>
           <p>
-            Qu'ils soit professionnelles ou personnels, mes plus importants projets sont présentés sur cette plateforme.
-            J'espère qu'ils vous plairont et vous donneront des futurs idées de projets ou d'amélioration.
+            Au cours de mon cursus universitaire, j'ai eu la chance de découvrir de multiple postes et projets aussi divers les uns comme les autres. 
+            Dans cette section, mes projets professionnels vous seront présentés.
           </p>
-          <a href="/portfolio.html">
+          <a href="projects.html">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Les découvrir <i class="fas fa-arrow-right"></i>
+            Révéler les projets pro <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="right-wrapper second-div">
+          <h2>Portfolio</h2>
+          <p>
+            Qu'ils soient éducatifs ou personnels, mes plus importants projets artistiques (UI/UX, 3D et jeux vidéo) sont présentés textuellement et graphiquement en suivant le lien 
+            ci-dessous. Ces projets sont aussi disponible sur mon compte Behance.
+          </p>
+          <a href="portfolio.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Naviguer dans le portfolio <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
     </span>
 
   </div>
+
 
   <script type="text/javascript" src="scripts/back-to-top.js"></script>
   <script type="text/javascript" src="scripts/js-scripts.js"></script>

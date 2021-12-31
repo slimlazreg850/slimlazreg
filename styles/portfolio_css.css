@@ -184,17 +184,17 @@ body {
 }
 
 .column button h2 span.uiux {
-    background-color: #E4FF3D;
+    background-color: #581845;
     width: fit-content;
 }
 
 .column button h2 span.projet-3D {
-    background-color: green;
+    background-color: #900c3f;
     width: fit-content;
 }
 
 .column button h2 span.jv {
-    background-color: blue;
+    background-color: #c70039;
     width: fit-content;
 }
 
