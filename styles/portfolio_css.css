@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #18191b;
+    background-color: #fff;
     scroll-behavior: smooth !important;
 }
 
@@ -32,6 +32,59 @@ body {
     border: 2px solid #18191b;
 }
 
+
+/* splashscreen */
+
+.intro {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo-header>span {
+    display: inline;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    margin-left: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+}
+
 /* h2 section */
 
 #container-h2 {
@@ -41,14 +94,52 @@ body {
 }
 
 #h2-section {
-    font-family: Fira Code;
+    font-family: 'Source Code Pro', monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 25px;
     line-height: 33px;
     align-items: center;
     position: relative;
-    color: #FFFFFF;
+    color: #18191b;
+    width: max-content;
+}
+
+.typing::before,
+.typing::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.typing::before {
+    background-color: #fff;
+    animation: typewriter 1s steps(36) 1s forwards;
+    animation-delay: 1.3s;
+}
+
+.typing::after {
+    width: 0.1em;
+    height: 35px;
+    background-color: #18191b;
+    animation: typewriter 1s steps(36) 1s forwards,
+        blink 800ms steps(36) infinite;
+    animation-delay: 1.3s;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
 }
 
 /* selector class */
@@ -71,7 +162,7 @@ body {
 
 
 .ul-selector a {
-    color: #fff;
+    color: #18191b;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -90,7 +181,7 @@ body {
     display: table;
     margin: 0px auto 0px auto;
     line-height: 80px;
-    opacity: 0.6;
+    opacity: 0.3;
 }
 
 .ul-selector li:hover, .active {
@@ -141,11 +232,12 @@ body {
     vertical-align: middle;
     transition: 0.2s;
     font-size: 15px;
-    opacity: 0.6;
+    opacity: 1;
+    object-fit: contain;
 }
 
 .column button:hover {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .column button h2 {
@@ -184,106 +276,189 @@ body {
 }
 
 .column button h2 span.uiux {
-    background-color: #581845;
+    background-color: #fcbb6d;
     width: fit-content;
+    color: #fff;
+    opacity: 1;
+    z-index: 100;
 }
 
 .column button h2 span.projet-3D {
-    background-color: #900c3f;
+    background-color: #45ada8;
     width: fit-content;
+    color: #fff;
+    opacity: 1;
+    z-index: 100;
 }
 
 .column button h2 span.jv {
-    background-color: #c70039;
+    background-color: #9de0ad;
     width: fit-content;
+    color: #fff;
+    opacity: 1;
+    z-index: 100;
 }
 
 #riven_3d {
     /* height: 490px; */
     background-image: url(../assets/portfolio/3d/riven_3d/0ac3b1130733011.61868f37f1009.png);
     background-position: center;
-    background-size: cover;
+    background-size: 80%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#riven_3d:hover {
+    background-size: 90%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #ui-steam {
     /* height: 350px; */
     background-image: url(../assets/portfolio/ui_ux/steam_rework/0a5e24133265377.61b9d15d60f3c.png);
     background-position: center;
-    background-size: cover;
+    background-size: 160%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#ui-steam:hover {
+    background-size: 180%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #ux-tregre {
     /* height: 600px; */
     background-image: url(../assets/portfolio/ui_ux/tregre/j4156fe68420fd.png);
     background-position: 80% 25%;
-    background-size: cover;
+    background-size: 120%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#ux-tregre:hover {
+    background-size: 140%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #mhk {
     /* height: 250px; */
     background-image: url(../assets/portfolio/ui_ux/MHK/3e894b113976643.6032bf0ce8988.png);
     background-position: 100% 10%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#mhk:hover {
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #pr_skoda {
     /* height: 350px; */
     background-image: url(../assets/portfolio/ui_ux/skoda/875894113976625.6032bef978f8e.png);
     background-position: 100% 90%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#pr_skoda:hover {
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #omote-gate {
     /* height: 450px; */
-    background-image: url(../assets/portfolio/3d/omate_gate/cb7406112820273.601bc13657910.png);
+    background-image: url(../assets/portfolio/3d/omote_gate/cb7406112820273.601bc13657910.png);
     background-position: 55% 90%;
-    background-size: cover;
+    background-size: 190%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#omote-gate:hover {
+    background-size: 215%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #rammstein {
     /* height: 350px; */
     background-image: url(../assets/portfolio/3d/rammstein_scene/1f539f110755033.5ff4d974e9dce.png);
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#rammstein:hover {
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
+
 }
 
 #dont-fall {
     /* height: 390px; */
     background-image: url(../assets/portfolio/video_game/dont_fall/e29a81110663695.5ff3553ae5401.png);
     background-position: 55% 90%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#dont-fall:hover {
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #HTC-halloween {
     /* height: 420px; */
     background-image: url(../assets/portfolio/video_game/hit_the_cloud_halloween/434fc489781829.5e008b26723e7.jpg);
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#HTC-halloween{
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #the-desk {
     /* height: 390px; */
     background-image: url(../assets/portfolio/3d/the_desk/77a03189123557.5deac9a8dc9de.png);
     background-position: 65% 20%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#the-desk:hover{
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #HTC-snow {
     /* height: 470px; */
     background-image: url(../assets/portfolio/video_game/hit_the_cloud_snow/feeff258971061.5a10374639a8f.png);
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#HTC-snow:hover{
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 #frozen-bow {
     /* height: 350px; */
     background-image: url(../assets/portfolio/3d/frozen_bow/1dc6a158713571.5a0634592d731.png);
     background-position: 55% 50%;
-    background-size:cover;
+    background-size: 165%;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#frozen-bow:hover {
+    background-size: 185%;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 
-@media screen and (min-device-width: 1551px) and (max-device-width: 1550px) {
+
+@media screen and (min-device-width: 1551px) and (max-device-width: 2540px) {
 
     .column {
         flex: 50%;
@@ -293,11 +468,10 @@ body {
         max-width: 100%;
         max-height: 20vw;
     }
+
     .column button h2 span {
         width: 50%;
-        top: 55%;
-        font-size: 1.5vw;
-        padding: 0 1vw;
+        font-size: 1vw;
     }
 }
 
@@ -311,10 +485,10 @@ body {
         max-width: 100%;
         max-height: 20vw;
     }
+
     .column button h2 span {
         width: 50%;
-        top: 55%;
-        font-size: 1.5vw;
+        font-size: 1vw;
         padding: 0 1vw;
     }
 }
@@ -350,7 +524,8 @@ body {
     }
 
     .column button h2 span {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
+        padding: 0.2% 2%;
     }
 
     .column button h2 {

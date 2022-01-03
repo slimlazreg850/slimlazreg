@@ -1,0 +1,230 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    scroll-behavior: smooth !important;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+/* Scrollbar Firefox, Blink */
+* {
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #E4FF3D #18191b;
+}
+
+
+/* Scrollbar Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #18191b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #E4FF3D;
+    border-radius: 10px;
+    border: 2px solid #18191b;
+}
+
+
+/* MAIN title */
+
+#wrapper-main {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+#wrapper-main #container {
+    width: 80%;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#wrapper-main #container h2 {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.1em;
+    color: #002654;
+    padding: 1% 1% 1.5% 1%;
+}
+
+#wrapper-main #container h1{
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10rem;
+    letter-spacing: 0em;
+    text-transform: none;
+    line-height: 1.1em;
+    color: #002654;
+    padding: 1% 1% 1.5% 1%;
+}
+
+/* button */
+
+#wrapper-btn-a {
+    width: max-content;
+    margin: 0 auto;
+}
+
+#wrapper-btn-a a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #6AAAD7;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    left: auto;
+    right: auto;
+    margin-top: 3%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+#wrapper-btn-a a:hover {
+    background: #6AAAD7;
+    color: #fff;
+    box-shadow: 0 0 5px #6AAAD7,
+        0 0 10px #6AAAD7;
+}
+
+#wrapper-btn-a a span {
+    position: absolute;
+    display: block;
+}
+
+#wrapper-btn-a a span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #6AAAD7);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+#wrapper-btn-a a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #6AAAD7);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+#wrapper-btn-a a span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #6AAAD7);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+#wrapper-btn-a a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #6AAAD7);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+@media (max-width: 1130px) {
+    #wrapper-main #container h2 {
+        font-size: 3.5rem;
+    }
+
+    #wrapper-btn-a a {
+        letter-spacing: 0.03em;
+    }
+}
+
+@media (max-width: 809px) {
+    #wrapper-main #container h2 {
+        font-size: 2.5rem;
+    }
+
+    #wrapper-main #container p {
+        font-size: 1.3rem;
+    }
+
+    #wrapper-btn-a a {
+        font-size: 1.1rem;
+    }
+}

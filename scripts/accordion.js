@@ -13,13 +13,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// function getDiv(str){
-//   var getDiv = document.getElementById(str);
-//   console.log(getDiv);
-//   openModal(getDiv);
-// }
-
-
 function openModal(obj) {
   document.getElementById(obj).style.display = "block";
   currentModal = obj;

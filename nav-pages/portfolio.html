@@ -1,0 +1,254 @@
+<!doctype html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio</title>
+  <meta name="description" content="Slim Lazreg, Portfolio, Profile">
+  <meta name="author" content="Slim Lazreg">
+
+  <meta property="og:title" content="Slim Lazreg">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/"> -->
+  <!-- <meta property="og:description" content="A simple HTML5 Template for new projects."> -->
+  <meta property="og:image" content="assets/images/logo_home.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- links -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Flavors&family=Gothic+A1:wght@200;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+
+  <script data-swup-reload-script defer type="text/javascript" src="../scripts/portfolio_scripts_show-hide.js"></script>
+  <script defer type="text/javascript" src="../scripts/back-to-top.js"></script>
+
+  <script defer src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer type="text/javascript" src="../scripts/js-scripts.js"></script>
+  <script defertype="text/javascript" src="../scripts/scrollToSmooth.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../styles/common_parts/top-menu-bar.css">
+  <link rel="stylesheet" href="../styles/common_parts/btn-to-top.css">
+  <link rel="stylesheet" href="../styles/common_parts/footer.css">
+  <link rel="stylesheet" href="../styles/portfolio_css.css">
+
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-32x32.png">
+
+</head>
+
+<body class="other-body stop-scrolling">
+
+  <div class="intro">
+    <h1 class="logo-header">
+      <span class="logo">Port</span><span class="logo"><span style="color: #FE1C33;">fo</span>lio.</span>
+    </h1>
+  </div>
+
+  <!-- back-to-top btn sticky -->
+  <div id="scroll-here"></div>
+  <a id="back-to-top" href="#scroll-here">
+    <img
+      src="data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Up%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M20 40l11.994-14L44 40' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E"
+      alt="Angle Up" />
+  </a>
+
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logoX"><a href="../index.html"><img class="logo_home" src="../assets/images/new_logo_main.png"
+          alt="logo_home"></a>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="../nav-pages/about.html">_à-propos</a></li>
+        <li><a href="../nav-pages/projects.html">_projets</a></li>
+        <li id="active"><a href="../nav-pages/portfolio.html">_portfolio</a></li>
+        <li><a href="../nav-pages/contact.html">_contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+
+  <div id="container-h2">
+    <h2 class="typing" id="h2-section">Entrée dans la section : _portfolio.</h2>
+  </div>
+
+  <div id="selector-class">
+    <ul class="ul-selector">
+      <li id="all"><a onclick="showALL(); setOpacityAll()">Tous</a></li>
+      <li id="p3d"><a onclick="show3D(); setOpacity3D()">3D</a></li>
+      <li id="uiux"><a onclick="showUIUX(); setOpacityUIUX()">UI/UX</a></li>
+      <li id="jv"><a onclick="showJV(); setOpacityJV()">Jeu Vidéo</a></li>
+    </ul>
+  </div>
+
+  <div class="row">
+
+    <div class="column p3d-btn">
+      <a href="../myPortfolio/3d/arcade-riven-sword.html">
+        <button id="riven_3d">
+          <h2><span class="projet-3D">_projet-3D</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column uiux-btn">
+      <a href="../myPortfolio/uiux/mhk.html">
+        <button id="mhk">
+          <h2><span class="uiux">_UI\UX</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column p3d-btn">
+      <a href="../myPortfolio/3d/rammstein-scene.html">
+        <button id="rammstein">
+          <h2><span class="projet-3D">_projet-3D</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column p3d-btn">
+      <a href="../myPortfolio/3d/the-desk.html">
+        <button id="the-desk">
+          <h2><span class="projet-3D">_projet-3D</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column uiux-btn">
+      <a href="../myPortfolio/uiux/steam-rework.html">
+        <button id="ui-steam">
+          <h2><span class="uiux">_UI/UX</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column uiux-btn">
+      <a href="../myPortfolio/uiux/skoda.html">
+        <button id="pr_skoda">
+          <h2><span class="uiux">_UI\UX</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column jv-btn">
+      <a href="../myPortfolio/jv/don-t-fall.html">
+        <button id="dont-fall">
+          <h2><span class="jv">_jeu-video</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column jv-btn">
+      <a href="../myPortfolio/jv/htc-snow.html">
+        <button id="HTC-snow">
+          <h2><span class="jv">_jeu-video</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column uiux-btn">
+      <a href="../myPortfolio/uiux/tregre.html">
+        <button id="ux-tregre">
+          <h2><span class="uiux">_UI\UX</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column p3d-btn">
+      <a href="../myPortfolio/3d/omote-gate.html">
+        <button id="omote-gate">
+          <h2><span class="projet-3D">_projet-3D</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column jv-btn">
+      <a href="../myPortfolio/jv/htc-halloween.html">
+        <button id="HTC-halloween">
+          <h2><span class="jv">_jeu-video</span></h2>
+        </button>
+      </a>
+    </div>
+    <div class="column p3d-btn">
+      <a href="../myPortfolio/3d/frozen-bow.html">
+        <button id="frozen-bow">
+          <h2><span class="projet-3D">_projet-3D</span></h2>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer_addr">
+      <h1 class="footer_logo">Slim Lazreg</h1>
+      <address>
+        Nice, France<br><br>
+        <a class="footer__btn" href="mailto:slimlazreg@gmail.com">Me contacter</a>
+      </address>
+    </div>
+    <ul class="footer_nav">
+      <li class="nav_item nav_item--extra">
+        <h2 class="nav_title">Pages</h2>
+
+        <ul class="nav_ul nav_ul--extra">
+          <li>
+            <a href="../index.html">Index</a>
+          </li>
+          <li>
+            <a href="../nav-pages/about.html">À Propos</a>
+          </li>
+          <li>
+            <a href="../nav-pages/projects.html">Projets</a>
+          </li>
+          <li>
+            <a href="../nav-pages/portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="/nav-pages/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/nav-pages/side-pages/sitemap.html">Plan du site</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav_item">
+        <h2 class="nav_title">Réseaux</h2>
+
+        <ul class="nav_ul">
+          <li>
+            <a href="https://www.behance.net/slimlazreg">Behance</a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/slimlazreg/">LinkedIn</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p>&copy; 2022. Tous droits réservés.</p>
+
+      <div class="legal_links">
+        <span>Made with pure CSS/HTML & JS.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script data-swup-reload-script defer type="text/javascript" src="../scripts/splashscreen.js"></script>
+
+
+</body>
+
+</html>
