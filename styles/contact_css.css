@@ -93,6 +93,7 @@ body {
     width: 100%;
     display: flex;
     background-color: #fff;
+    margin-bottom: 40%;
 }
 
 #wrapper-main #container {
